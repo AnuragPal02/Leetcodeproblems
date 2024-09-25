@@ -1,4 +1,5 @@
 
 const solve = function solver(a,b){
-    return a + b;
-}
+    console.log(a+b);
+} 
+solve(4,5);
