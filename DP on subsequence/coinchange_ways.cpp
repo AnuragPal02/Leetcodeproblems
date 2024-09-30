@@ -8,13 +8,13 @@ public:
     int t[301][5001];
     
     int solve(int i, vector<int>& coins, int amount) {
-        
+        // if amount becomes 0 then we found one way
         if(amount == 0)
             return t[i][amount] = 1;
-        
+        // if amount < 0 or i == n then that means there is no way from here
         if(i == n || amount < 0)
             return 0;
-        
+    
          if(t[i][amount] != -1)
             return t[i][amount];
         
